@@ -18,7 +18,6 @@ const BIRTHDAY = {
     "কিছু মানুষ জীবনে আসে, আর সাধারণ দিনগুলোকে সুন্দর স্মৃতিতে বদলে দেয়। তোমার জন্য আজকের এই ছোট্ট surprise।",
 
   memoryTitle: "Some Beautiful Memories 📸",
-  memoryText:
 
   letterTitle: "A Little Letter 💌",
   letterText:

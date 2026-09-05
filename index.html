@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#f7d8e8">
+<title>Birthday Surprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="top-glow"></div>
+
+  <main>
+    <section class="screen active" id="screen0">
+      <div class="tiny">A SPECIAL DAY 3,Nov,2026 ✦</div>
+      <div class="gift-wrap" id="gift">
+        <div class="gift-lid"></div><div class="gift-box"></div>
+        <div class="ribbon-v"></div><div class="ribbon-h"></div>
+        <div class="bow">🎀</div>
+      </div>
+      <h1 id="introTitle"></h1>
+      <p id="introText"></p>
+      <button class="btn" onclick="openGift()">Open Your Surprise 🎁</button>
+      <div class="hint">tap the button</div>
+    </section>
+
+    <section class="screen" id="screen1">
+      <div class="card hero-card">
+        <div class="sparkles">✦ ✧ ✦</div>
+        <p class="script">Dear <span class="name"></span>,</p>
+        <h2>Today is all about <span>YOU</span> 💗</h2>
+        <p>তোমার জন্য ছোট্ট একটা surprise ।</p>
+      </div>
+      <button class="btn" onclick="go(2)">Next Surprise ✨</button>
+    </section>
+
+    <section class="screen" id="screen2">
+      <div class="section-label">THOUGHT</div>
+      <div class="card letter-card">
+        <h2 id="thoughtTitle"></h2>
+        <p id="thoughtText"></p>
+        <div class="heart">♡</div>
+      </div>
+      <button class="btn" onclick="go(3)">Keep Going 💕</button>
+    </section>
+
+    <section class="screen" id="screen3">
+      <div class="section-label">MEMORIES</div>
+      <h2 id="memoryTitle"></h2>
+      <p id="memoryText"></p>
+      <div class="photo-stack" id="photos"></div>
+      <div class="dots" id="dots"></div>
+      <button class="btn" onclick="go(4)">Next 💫</button>
+    </section>
+
+    <section class="screen" id="screen4">
+      <div class="section-label">A LITTLE GAME</div>
+      <div class="card game-card">
+        <h2>Pick a heart 💗</h2>
+        <p>একটা heart চাপো।</p>
+        <div class="hearts">
+          <button onclick="pickHeart(this)">💗</button>
+          <button onclick="pickHeart(this)">💖</button>
+          <button onclick="pickHeart(this)">💕</button>
+          <button onclick="pickHeart(this)">💘</button>
+        </div>
+        <p id="gameMsg" class="game-msg"></p>
+      </div>
+      <button class="btn hidden" id="gameNext" onclick="go(5)">One More Surprise 🎁</button>
+    </section>
+
+    <section class="screen" id="screen5">
+      <div class="section-label">A LITTLE LETTER</div>
+      <div class="card letter-card big">
+        <h2 id="letterTitle"></h2>
+        <p id="letterText"></p>
+        <div class="signature">— <span id="fromName"></span> ❤️</div>
+      </div>
+      <button class="btn" onclick="go(6)">Final Surprise 🎂</button>
+    </section>
+
+    <section class="screen final" id="screen6">
+      <div class="confetti" id="confetti"></div>
+      <div class="cake">🎂</div>
+      <p class="script">With lots of love...</p>
+      <h1><span id="finalTitle"></span> 🎂<br><span class="finalName"></span>! 🎉</h1>
+      <p id="finalText"></p>
+      <div class="balloons">🎈 🎈 🎈</div>
+      <button class="btn" onclick="restart()">Watch Again ↻</button>
+    </section>
+  </main>
+
+  <div class="progress"><i id="progress"></i></div>
+</div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

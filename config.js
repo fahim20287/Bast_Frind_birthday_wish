@@ -8,7 +8,7 @@ const BIRTHDAY = {
   from: "FAHIM",
 
   // Screen 6 (Final) — Happy Birthday, [finalName]!
-  finalName: "Dear Bast Frind",
+  finalName: "ᴅᴇᴀʀ ʙᴇꜱᴛ ꜰʀɪᴇɴᴅ ꜱᴀʏᴍᴀ",
 
   introTitle: "A Little Birthday Surprise For You 🎂",
   introText: "আজকের দিনটা শুধু তোমার জন্য। ধীরে ধীরে প্রতিটি surprise খুলে দেখো। ❤️",
